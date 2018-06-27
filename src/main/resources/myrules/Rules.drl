@@ -1,0 +1,12 @@
+//created on: Jun 27, 2018
+package myrules
+
+import org.reynoldsm88.model.Person;
+
+rule "my test rule"
+	dialect "mvel"
+	when
+		$p : Person()
+	then
+		System.out.println( $p.name );
+end
